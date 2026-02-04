@@ -1,102 +1,138 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آموزش طراحی سایت - عمران وب</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Vazirmatn', Tahoma, sans-serif; line-height: 1.7; margin: 0; background: #f0f4f8; color: #333; }
-        header { background: linear-gradient(90deg, #4a90e2, #50e3c2); color: white; padding: 30px 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 700; transition: color 0.3s; }
-        nav a:hover { color: #ffe600; }
-        section { max-width: 1000px; margin: 30px auto; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h1, h2, h3 { color: #4a90e2; }
-        pre { background: #f5f7fa; padding: 15px; border-radius: 6px; overflow-x: auto; }
-        img { max-width: 100%; border-radius: 10px; margin: 15px 0; }
-        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 30px; }
-        a.button { display: inline-block; padding: 10px 20px; background: #50e3c2; color: white; border-radius: 6px; text-decoration: none; font-weight: 700; margin-top: 15px; transition: background 0.3s; }
-        a.button:hover { background: #4a90e2; }
-        article { margin-bottom: 35px; }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        nav { margin-top: 10px; }
-        p { font-size: 1.1em; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عمران وب | آموزش طراحی سایت</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #f3f6fb; color: #333; line-height: 1.8; }
+html { scroll-behavior: smooth; }
+header { background: linear-gradient(120deg, #2563eb, #22c55e); color: white; padding: 40px 20px; text-align: center; }
+header h1 { margin: 0; font-size: 2.5em; }
+nav { margin-top: 15px; }
+nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+section { background: white; max-width: 1000px; margin: 35px auto; padding: 30px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+#home { text-align: center; }
+#home img { margin-top: 25px; }
+.button { display: inline-block; padding: 12px 22px; background: #22c55e; color: white; border-radius: 10px; text-decoration: none; font-weight: bold; margin: 10px; }
+.button:hover { background: #2563eb; }
+article { background: #ffffff; border-radius: 18px; padding: 25px; margin-bottom: 35px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
+article:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+h2, h3 { color: #2563eb; }
+pre { background: #f1f5f9; padding: 15px; border-radius: 10px; overflow-x: auto; }
+img { width: 100%; border-radius: 14px; margin-top: 15px; }
+footer { background: #111827; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+@media (max-width: 768px) { header h1 { font-size: 1.8em; } nav a { display: inline-block; margin: 8px; } section { padding: 20px; margin: 20px 10px; }
+}
+/* تمرین عملی */
+#practice article { background: #eaf5ff; border-radius: 16px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
+#practice article:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+/* پروژه‌های پیشرفته */
+#advanced article { background: #fff0f5; border-radius: 16px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
+#advanced article:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+</style>
 </head>
 <body>
-
 <header>
-    <h1>آموزش طراحی سایت از صفر تا حرفه‌ای</h1>
-    <nav>
-        <a href="#home">خانه</a>
-        <a href="#tutorials">آموزش‌ها</a>
-        <a href="#projects">نمونه‌کارها</a>
-        <a href="#about">درباره من</a>
-        <a href="#contact">تماس</a>
-    </nav>
+<h1>عمران وب</h1>
+<p>آموزش طراحی سایت از صفر 🚀</p>
+<nav>
+<a href="#home">خانه</a>
+<a href="#tutorials">آموزش‌ها</a>
+<a href="#projects">پروژه‌ها</a>
+<a href="#practice">تمرین‌ها</a>
+<a href="#advanced">پروژه‌های پیشرفته</a>
+<a href="#about">درباره من</a>
+<a href="#contact">تماس</a>
+</nav>
 </header>
 
 <section id="home">
-    <h2>خوش آمدید!</h2>
-    <p>سلام! 👋 من عمران هستم و این سایت برای آموزش طراحی وب از صفر تا متوسط ساخته شده. در این سایت، مقالات کوتاه و عملی HTML، CSS و نکات طراحی وب را خواهید دید. با دنبال کردن سایت و کانال تلگرام، می‌توانید به راحتی وب‌سایت خودتان را بسازید!</p>
-    <a href="https://t.me/emran_web" class="button">عضویت در کانال تلگرام</a>
-    <img src="images/web_banner.png" alt="آموزش وب">
+<h2>یادگیری طراحی سایت، ساده و کاربردی</h2>
+<p>در عمران وب، HTML و CSS را با آموزش‌های تصویری و کوتاه یاد می‌گیری. مناسب مبتدی‌ها 👌</p>
+<a class="button" href="#tutorials">شروع یادگیری</a>
+<a class="button" href="https://t.me/emran_web">کانال تلگرام</a>
+<img src="images/web_banner.png" alt="آموزش طراحی سایت">
 </section>
 
 <section id="tutorials">
-    <h2>آموزش‌ها</h2>
-
-    <article>
-        <h3>HTML چیست؟ آموزش HTML برای مبتدی‌ها</h3>
-        <p>HTML مخفف HyperText Markup Language است و پایه تمام صفحات وب است.</p>
-        <pre>&lt;html&gt;
-  &lt;body&gt;
-    &lt;h1&gt;سلام دنیا&lt;/h1&gt;
-    &lt;p&gt;این اولین صفحه HTML من است&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-        <img src="images/html_intro.png" alt="HTML چیست؟">
-        <p>نکته: HTML بدون CSS ظاهر ساده دارد. برای زیبایی صفحات باید CSS استفاده شود.</p>
-    </article>
-
-    <article>
-        <h3>فرق HTML و CSS</h3>
-        <p>HTML ساختار سایت را مشخص می‌کند و CSS ظاهر و طراحی سایت را.</p>
-        <img src="images/html_css.png" alt="فرق HTML و CSS">
-    </article>
-
-    <article>
-        <h3>تگ‌های HTML (باز، بسته و خودبسته)</h3>
-        <p>تگ‌ها ساختار صفحات وب را مشخص می‌کنند. بعضی تگ‌ها باز و بسته دارند و بعضی خودبسته هستند.</p>
-        <img src="images/html_tags.png" alt="تگ‌های HTML">
-    </article>
-
-    <article>
-        <h3>نمونه عملی اولین صفحه HTML</h3>
-        <p>در این مثال یک صفحه HTML با عنوان و پاراگراف ساخته شده است.</p>
-        <img src="images/html_example.png" alt="نمونه عملی HTML">
-    </article>
+<h2>آموزش‌ها</h2>
+<article>
+<h3>HTML چیست؟</h3>
+<p>HTML زبان اصلی ساخت صفحات وب است.</p>
+<img src="images/html_intro.png" alt="HTML چیست">
+<pre>&lt;h1&gt;سلام دنیا&lt;/h1&gt;
+&lt;p&gt;اولین صفحه HTML من&lt;/p&gt;</pre>
+<section id="practice">
+<h2>تمرین‌های عملی و هفتگی</h2>
+<article>
+<h3>تمرین هفته 1: اولین صفحه HTML</h3>
+<p>یک صفحه HTML بسازید که شامل یک عنوان و یک پاراگراف باشد.</p>
+<pre>&lt;h1&gt;سلام دنیا&lt;/h1&gt;
+&lt;p&gt;اولین صفحه من&lt;/p&gt;</pre>
+<a class="button" href="#">دانلود فایل تمرینی</a>
+<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
+</article>
+<article>
+<h3>تمرین هفته 2: ساخت لیست و لینک</h3>
+<p>یک صفحه بسازید که شامل لیست و لینک به یک سایت دیگر باشد.</p>
+<pre>&lt;ul&gt;
+  &lt;li&gt;مورد اول&lt;/li&gt;
+  &lt;li&gt;مورد دوم&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=&quot;https://example.com&quot;&gt;رفتن به سایت&lt;/a&gt;</pre>
+<a class="button" href="#">دانلود فایل تمرینی</a>
+<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
+</article>
 </section>
 
-<section id="projects">
-    <h2>نمونه‌کارها</h2>
-    <p>در این بخش نمونه پروژه‌ها و تمرین‌های عملی HTML نمایش داده می‌شود.</p>
+<section id="advanced">
+<h2>تمرین‌ها و پروژه‌های پیشرفته</h2>
+<article>
+<h3>پروژه 1: صفحه شخصی HTML + CSS</h3>
+<p>یک صفحه شخصی بسازید شامل: عکس، معرفی کوتاه و لینک شبکه‌های اجتماعی.</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;صفحه شخصی&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;سلام! من عمران هستم&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+<a class="button" href="#">دانلود فایل تمرینی</a>
+<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
+</article>
+<article>
+<h3>پروژه 2: گالری عکس با CSS Grid</h3>
+<p>یک گالری عکس با 6 تصویر و استفاده از CSS Grid طراحی کنید.</p>
+<pre>&lt;div class=&quot;gallery&quot;&gt;
+  &lt;img src=&quot;img1.jpg&quot;&gt;
+  &lt;img src=&quot;img2.jpg&quot;&gt;
+  ...
+&lt;/div&gt;</pre>
+<a class="button" href="#">دانلود فایل تمرینی</a>
+<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
+</article>
 </section>
 
 <section id="about">
-    <h2>درباره من</h2>
-    <p>من عمران هستم، مدرس و توسعه‌دهنده وب. هدفم این است که یادگیری طراحی وب برای همه ساده و کاربردی باشد.</p>
+<h2>درباره من</h2>
+<p>من عمران هستم. هدفم آموزش ساده و کاربردی طراحی وب برای همه است.</p>
 </section>
 
 <section id="contact">
-    <h2>تماس با من</h2>
-    <p>برای ارتباط با من می‌توانید ایمیل ارسال کنید یا از طریق کانال تلگرام پیام بدهید.</p>
-    <a href="https://t.me/emran_web" class="button">ارتباط از طریق تلگرام</a>
+<h2>تماس با من</h2>
+<p>از طریق کانال تلگرام می‌توانی با من در ارتباط باشی 👇</p>
+<a class="button" href="https://t.me/emran_web">تلگرام عمران وب</a>
 </section>
 
 <footer>
-    <p>تمامی حقوق محفوظ است © 2026 عمران وب</p>
+<p>© 2026 | عمران وب</p>
 </footer>
-
 </body>
 </html>
