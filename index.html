@@ -1,138 +1,75 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<title>Emran Web | آموزش طراحی وب</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عمران وب | آموزش طراحی سایت</title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
-<style>
-* { box-sizing: border-box; }
-body { font-family: 'Vazirmatn', sans-serif; margin: 0; background: #f3f6fb; color: #333; line-height: 1.8; }
-html { scroll-behavior: smooth; }
-header { background: linear-gradient(120deg, #2563eb, #22c55e); color: white; padding: 40px 20px; text-align: center; }
-header h1 { margin: 0; font-size: 2.5em; }
-nav { margin-top: 15px; }
-nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; }
-nav a:hover { text-decoration: underline; }
-section { background: white; max-width: 1000px; margin: 35px auto; padding: 30px; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-#home { text-align: center; }
-#home img { margin-top: 25px; }
-.button { display: inline-block; padding: 12px 22px; background: #22c55e; color: white; border-radius: 10px; text-decoration: none; font-weight: bold; margin: 10px; }
-.button:hover { background: #2563eb; }
-article { background: #ffffff; border-radius: 18px; padding: 25px; margin-bottom: 35px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
-article:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
-h2, h3 { color: #2563eb; }
-pre { background: #f1f5f9; padding: 15px; border-radius: 10px; overflow-x: auto; }
-img { width: 100%; border-radius: 14px; margin-top: 15px; }
-footer { background: #111827; color: white; text-align: center; padding: 20px; margin-top: 40px; }
-@media (max-width: 768px) { header h1 { font-size: 1.8em; } nav a { display: inline-block; margin: 8px; } section { padding: 20px; margin: 20px 10px; }
-}
-/* تمرین عملی */
-#practice article { background: #eaf5ff; border-radius: 16px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
-#practice article:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
-/* پروژه‌های پیشرفته */
-#advanced article { background: #fff0f5; border-radius: 16px; padding: 25px; margin-bottom: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: 0.3s ease; }
-#advanced article:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-<h1>عمران وب</h1>
-<p>آموزش طراحی سایت از صفر 🚀</p>
-<nav>
-<a href="#home">خانه</a>
-<a href="#tutorials">آموزش‌ها</a>
-<a href="#projects">پروژه‌ها</a>
-<a href="#practice">تمرین‌ها</a>
-<a href="#advanced">پروژه‌های پیشرفته</a>
-<a href="#about">درباره من</a>
-<a href="#contact">تماس</a>
+
+<nav style="background:#111827;padding:10px;text-align:center;">
+  <a href="#top" class="btn">خانه</a>
+  <a href="contact.html" class="btn">تماس</a>
+  <a href="https://t.me/emran_web" class="btn" target="_blank">تلگرام</a>
 </nav>
+
+<header id="top">
+  <h1>Emran Web</h1>
+  <p>آموزش ساده و رایگان طراحی وب | شروع از صفر</p>
 </header>
 
-<section id="home">
-<h2>یادگیری طراحی سایت، ساده و کاربردی</h2>
-<p>در عمران وب، HTML و CSS را با آموزش‌های تصویری و کوتاه یاد می‌گیری. مناسب مبتدی‌ها 👌</p>
-<a class="button" href="#tutorials">شروع یادگیری</a>
-<a class="button" href="https://t.me/emran_web">کانال تلگرام</a>
-<img src="images/web_banner.png" alt="آموزش طراحی سایت">
+<section>
+  <h2>📘 تمرین‌ها و پروژه‌ها</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>تمرین HTML – هفته ۱</h3>
+      <p>آشنایی با تگ‌های اصلی HTML</p>
+      <a class="btn" href="week1.html" download>دانلود تمرین</a>
+    </div>
+
+    <div class="card">
+      <h3>تمرین HTML – هفته ۲</h3>
+      <p>لیست‌ها و لینک‌ها</p>
+      <a class="btn" href="week2.html" download>دانلود تمرین</a>
+    </div>
+
+    <div class="card">
+      <h3>تمرین HTML – هفته ۳</h3>
+      <p>ساخت فرم ساده</p>
+      <a class="btn" href="week3.html" download>دانلود تمرین</a>
+    </div>
+
+    <div class="card">
+      <h3>پروژه ۱ – صفحه شخصی</h3>
+      <a class="btn" href="project1.html" download>دانلود پروژه</a>
+    </div>
+
+    <div class="card">
+      <h3>پروژه ۲ – گالری ساده</h3>
+      <a class="btn" href="project2.html" download>دانلود پروژه</a>
+    </div>
+
+    <div class="card">
+      <h3>پروژه ۳ – کارت محصول (CSS)</h3>
+      <a class="btn" href="project3.html" download>دانلود پروژه</a>
+    </div>
+
+  </div>
 </section>
 
-<section id="tutorials">
-<h2>آموزش‌ها</h2>
-<article>
-<h3>HTML چیست؟</h3>
-<p>HTML زبان اصلی ساخت صفحات وب است.</p>
-<img src="images/html_intro.png" alt="HTML چیست">
-<pre>&lt;h1&gt;سلام دنیا&lt;/h1&gt;
-&lt;p&gt;اولین صفحه HTML من&lt;/p&gt;</pre>
-<section id="practice">
-<h2>تمرین‌های عملی و هفتگی</h2>
-<article>
-<h3>تمرین هفته 1: اولین صفحه HTML</h3>
-<p>یک صفحه HTML بسازید که شامل یک عنوان و یک پاراگراف باشد.</p>
-<pre>&lt;h1&gt;سلام دنیا&lt;/h1&gt;
-&lt;p&gt;اولین صفحه من&lt;/p&gt;</pre>
-<a class="button" href="#">دانلود فایل تمرینی</a>
-<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
-</article>
-<article>
-<h3>تمرین هفته 2: ساخت لیست و لینک</h3>
-<p>یک صفحه بسازید که شامل لیست و لینک به یک سایت دیگر باشد.</p>
-<pre>&lt;ul&gt;
-  &lt;li&gt;مورد اول&lt;/li&gt;
-  &lt;li&gt;مورد دوم&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a href=&quot;https://example.com&quot;&gt;رفتن به سایت&lt;/a&gt;</pre>
-<a class="button" href="#">دانلود فایل تمرینی</a>
-<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
-</article>
-</section>
-
-<section id="advanced">
-<h2>تمرین‌ها و پروژه‌های پیشرفته</h2>
-<article>
-<h3>پروژه 1: صفحه شخصی HTML + CSS</h3>
-<p>یک صفحه شخصی بسازید شامل: عکس، معرفی کوتاه و لینک شبکه‌های اجتماعی.</p>
-<pre>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;صفحه شخصی&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;سلام! من عمران هستم&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-<a class="button" href="#">دانلود فایل تمرینی</a>
-<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
-</article>
-<article>
-<h3>پروژه 2: گالری عکس با CSS Grid</h3>
-<p>یک گالری عکس با 6 تصویر و استفاده از CSS Grid طراحی کنید.</p>
-<pre>&lt;div class=&quot;gallery&quot;&gt;
-  &lt;img src=&quot;img1.jpg&quot;&gt;
-  &lt;img src=&quot;img2.jpg&quot;&gt;
-  ...
-&lt;/div&gt;</pre>
-<a class="button" href="#">دانلود فایل تمرینی</a>
-<a class="button" href="https://t.me/emran_web">ادامه در تلگرام</a>
-</article>
-</section>
-
-<section id="about">
-<h2>درباره من</h2>
-<p>من عمران هستم. هدفم آموزش ساده و کاربردی طراحی وب برای همه است.</p>
-</section>
-
-<section id="contact">
-<h2>تماس با من</h2>
-<p>از طریق کانال تلگرام می‌توانی با من در ارتباط باشی 👇</p>
-<a class="button" href="https://t.me/emran_web">تلگرام عمران وب</a>
+<section>
+  <h2>📞 ارتباط</h2>
+  <a class="btn" href="contact.html">تماس با من</a>
 </section>
 
 <footer>
-<p>© 2026 | عمران وب</p>
+  © 2026 Emran Web
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
