@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>اسلایدر تصاویر</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.slider{
+  max-width:600px;
+  margin:30px auto;
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+.slides{
+  display:flex;
+  width:300%;
+  transition:0.5s;
+}
+.slides img{
+  width:100%;
+  display:block;
+}
+</style>
+</head>
+<body>
+
+<section>
+<h2>پروژه اسلایدر تصاویر</h2>
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="images/img1.jpg" alt="تصویر ۱">
+    <img src="images/img2.jpg" alt="تصویر ۲">
+    <img src="images/img3.jpg" alt="تصویر ۳">
+  </div>
+</div>
+</section>
+
+<script>
+let slides = document.getElementById('slides');
+let index = 0;
+
+setInterval(()=>{
+  index++;
+  if(index > 2) index = 0;
+  slides.style.transform = 'translateX(-' + index*100 + '%)';
+},3000);
+</script>
+
+</body>
+</html>

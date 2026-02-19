@@ -1,75 +1,86 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-<meta charset="UTF-8">
-<title>Emran Web | آموزش طراحی وب</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emran Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav style="background:#111827;padding:10px;text-align:center;">
-  <a href="#top" class="btn">خانه</a>
-  <a href="contact.html" class="btn">تماس</a>
-  <a href="https://t.me/emran_web" class="btn" target="_blank">تلگرام</a>
-</nav>
+<div class="container">
+  <h1>Emran Web - آموزش طراحی سایت</h1>
 
-<header id="top">
-  <h1>Emran Web</h1>
-  <p>آموزش ساده و رایگان طراحی وب | شروع از صفر</p>
-</header>
-
-<section>
-  <h2>📘 تمرین‌ها و پروژه‌ها</h2>
-
+  <h2>پروژه‌ها</h2>
   <div class="cards">
-
-    <div class="card">
-      <h3>تمرین HTML – هفته ۱</h3>
-      <p>آشنایی با تگ‌های اصلی HTML</p>
-      <a class="btn" href="week1.html" download>دانلود تمرین</a>
-    </div>
-
-    <div class="card">
-      <h3>تمرین HTML – هفته ۲</h3>
-      <p>لیست‌ها و لینک‌ها</p>
-      <a class="btn" href="week2.html" download>دانلود تمرین</a>
-    </div>
-
-    <div class="card">
-      <h3>تمرین HTML – هفته ۳</h3>
-      <p>ساخت فرم ساده</p>
-      <a class="btn" href="week3.html" download>دانلود تمرین</a>
-    </div>
-
-    <div class="card">
-      <h3>پروژه ۱ – صفحه شخصی</h3>
-      <a class="btn" href="project1.html" download>دانلود پروژه</a>
-    </div>
-
-    <div class="card">
-      <h3>پروژه ۲ – گالری ساده</h3>
-      <a class="btn" href="project2.html" download>دانلود پروژه</a>
-    </div>
-
-    <div class="card">
-      <h3>پروژه ۳ – کارت محصول (CSS)</h3>
-      <a class="btn" href="project3.html" download>دانلود پروژه</a>
-    </div>
-
+    <a href="project1.html" class="card">
+      <h3>پروژه 1</h3>
+      <p>ساخت سایت شخصی ساده</p>
+    </a>
+    <a href="project2.html" class="card">
+      <h3>پروژه 2</h3>
+      <p>ساخت صفحه لاگین</p>
+    </a>
+    <a href="project3.html" class="card">
+      <h3>پروژه 3</h3>
+      <p>لندینگ پیج حرفه‌ای</p>
+    </a>
   </div>
+
+  <h2>تمرین‌ها</h2>
+  <div class="cards">
+    <a href="exercise1.html" class="card">
+      <h3>تمرین 1</h3>
+      <p>ساخت تیتر و پاراگراف</p>
+    </a>
+    <a href="exercise2.html" class="card">
+      <h3>تمرین 2</h3>
+      <p>کار با رنگ و فونت</p>
+    </a>
+    <a href="exercise3.html" class="card">
+      <h3>تمرین 3</h3>
+      <p>ساخت دکمه و لینک</p>
+    </a>
+  </div>
+</div>
+
+<!-- دکمه برای حالت شب -->
+<div class="dark-mode-btn" onclick="toggleDarkMode()">🌙</div>
+
+<script>
+  // تغییر حالت شب و روز
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+
+  // انیمیشن ورود بخش‌ها
+  const cards = document.querySelectorAll('.card');
+  const footer = document.querySelector('footer');
+
+  function reveal() {
+    for (let card of cards) {
+      let top = card.getBoundingClientRect().top;
+      let windowHeight = window.innerHeight;
+      if (top < windowHeight - 100) {
+        card.style.opacity = 1;
+        card.style.transform = 'translateY(0)';
+      }
+    }
+  }
+
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+</script>
+<section class="section" id="contact">
+  <h2>تماس با ما</h2>
+  <form action="#" method="POST">
+    <input type="text" placeholder="نام" required>
+    <input type="email" placeholder="ایمیل" required>
+    <textarea placeholder="پیام" required></textarea>
+    <button type="submit" class="btn">ارسال پیام</button>
+  </form>
 </section>
+<div id="back-to-top" class="btn back">بازگشت به بالا</div>
 
-<section>
-  <h2>📞 ارتباط</h2>
-  <a class="btn" href="contact.html">تماس با من</a>
-</section>
-
-<footer>
-  © 2026 Emran Web
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
